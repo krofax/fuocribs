@@ -1,6 +1,6 @@
 <?php
-//require_once 'connect.php';
 session_start();
+require_once 'db/connect_vars.php';
 
 if (isset($_POST['submit'])) {
 $user =  mysqli_real_escape_string($conn, $_POST['username']);
